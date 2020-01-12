@@ -18,31 +18,18 @@
     z-index: 999;
 }
 
+#user-img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .nav-fixed {
     top: 0;
 }
 
-#classCards{
-    margin-top: 100px;
-}
-
 h2 {
     font-family: 'Product Sans', monospace;
-}
-
-h6{
-    font-family: 'Product Sans', monospace;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    letter-spacing: 4px;
-    overflow: hidden;
-    background: linear-gradient(90deg, #fff, #000, #fff);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 2.5s linear infinite;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 #dropdown1{
@@ -58,12 +45,34 @@ h6{
     }
 }
 
+
+#text-animation{
+    font-family: 'Product Sans', monospace;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #fff, #000, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 1.5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
 /*mobile*/
 /*mobile*/
 @media only screen and (max-width: 600px) {
-    #load{
-        margin-top: 55px;
+    #user-img{
+        height: auto;
+        width: 100%;
     }
+}
+
+.bio p::first-letter{
+    -webkit-initial-letter: 4;
+    initial-letter: 4
 }
 
 .justifyText{
