@@ -6,7 +6,7 @@ $teal: #04949c;
 $light-teal: #94dcd4;
 $black: #040404;
 $blue: #0277bd;
-$orange: #fc8c06;
+$orange: #FA7806;
 
 body {
   font-family: "Baloo Da 2", cursive;
@@ -40,6 +40,7 @@ nav {
 .mt5 {
   margin-top: 5rem;
 }
+
 #my-img {
   border-radius: 50%;
 }
@@ -73,6 +74,12 @@ nav {
   h4 {
     color: $orange;
   }
+h6 {
+  a {
+    color: $black;
+    font-weight: 600;
+  }
+}
   .social-btn {
     margin-top: 1rem;
 
