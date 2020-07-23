@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Baloo Da 2", cursive;
 }
@@ -398,6 +394,24 @@ nav ul a:hover {
 .timeline .timeline-badge i {
   font-size: 25px;
   line-height: 40px;
+}
+
+#blob {
+  position: absolute;
+  top: 85%;
+  right: 40%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
+}
+
+#blob1 {
+  position: absolute;
+  top: 155%;
+  right: 40%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
 }
 
 ::-webkit-scrollbar {

@@ -8,9 +8,6 @@ $black: #040404;
 $blue: #0277bd;
 $orange: #fc8c06;
 
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: "Baloo Da 2", cursive;
 }
@@ -342,6 +339,24 @@ nav {
   }
 }
 
+#blob {
+  position: absolute;
+  top: 85%;
+  right: 40%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
+}
+#blob1 {
+  position: absolute;
+  top: 155%;
+  right: 40%;
+  max-height: 400px;
+  max-width: 400px;
+  z-index: -1;
+}
+
+// SCROLL BAR
 ::-webkit-scrollbar {
   width: 12px;
 }

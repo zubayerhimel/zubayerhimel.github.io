@@ -55,8 +55,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- Aos scroll effect -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Dev Icons -->
     <link
       rel="stylesheet"
@@ -75,7 +74,7 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"
               ><i class="material-icons black-text">menu</i></a
             >
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down" id="nav">
               <li class="active">
                 <a href="#home">Home</a>
               </li>
@@ -126,22 +125,28 @@
             <div class="col s12 m6 l6">
               <h1>Zubayer Himel</h1>
               <h4>
-                Front-end developer, Open source contributor
+                <span
+                  class="typewrite"
+                  data-period="300"
+                  data-type='[ "Front-end Developer", "Open Source Contributor", "UI/UX Designer"]'
+                  ><span class="wrap"></span
+                ></span>
               </h4>
+
               <span class="flow-text">
                 Hello! I’m Zubayer, a self taught 22 years old undergrad
                 Software Engineering student from Bangladesh. I am a front-end
-                developer, problem solver, love to work with modern technology,
-                data structure and algorithms. I also have interest in data
-                science and machine learning.
+                developer, problem solver and love to work with modern
+                technology. I also have interest in data science and machine
+                learning.
               </span>
               <div class="row">
                 <div class="col s12 m12 l6">
                   <h6>
                     <i class="material-icons left red-text text-lighten-1"
                       >mail</i
-                    ><a href="mailto:zubayer35-1985@diu.edu.bd"
-                      >zubayer35-1985@diu.edu.bd</a
+                    ><a href="mailto:zhimel007@gmail.com"
+                      >zhimel007@gmail.com</a
                     >
                   </h6>
                   <h6>
@@ -417,7 +422,7 @@
             <h2 class="center">Contact</h2>
             <div class="row">
               <div class="col s12 m6 l4 center">
-                <h5><b>Email: </b>zubayer35-1985@diu.edu.bd</h5>
+                <h5><b>Email: </b>zhimel007@gmail.com</h5>
 
                 <h5><b>Mobile Number: </b>01955377998</h5>
               </div>
@@ -474,11 +479,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Materialize js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Aos scroll effect -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Text animation effect -->
+    <script src="https://teamtigers.github.io/assets/js/text-animation.js"></script>
     <!-- Github repositories -->
     <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <!-- Plugin -->
+    <script src="assets/js/jQuery.nav.js"></script>
     <script src="assets/js/app.js"></script>
     <!-- Animated text -->
     <!-- Contact form -->
