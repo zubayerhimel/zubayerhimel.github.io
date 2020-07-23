@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 $teal: #04949c;
 $light-teal: #94dcd4;
@@ -14,12 +15,20 @@ body {
   font-family: "Baloo Da 2", cursive;
 }
 nav {
+  .brand-logo {
+    margin-left: 1rem;
+    color: $teal;
+    font-family: "Satisfy", cursive;
+  }
   ul {
     a {
       color: $black;
+      font-size: 1.125em;
       transition: all 0.2s ease-in-out;
 
       &:hover {
+        font-weight: 600;
+        color: $black;
         transform: scale(1.1);
       }
     }
@@ -46,10 +55,17 @@ nav {
   background-color: #fff !important;
   color: $black !important;
   border: 1px solid $black;
+  border-radius: 5px;
   font-size: 1.25rem;
   height: 3rem;
-  width: 12rem;
+  width: 13rem;
+  margin-right: 0.5rem;
   line-height: 2.5;
+
+  &:hover {
+    background-color: $black !important;
+    color: #fff !important;
+  }
 }
 
 #home {
@@ -60,11 +76,16 @@ nav {
   h4 {
     color: $orange;
   }
+  .social-btn {
+    margin-top: 1rem;
+
+    .btn-floating {
+      margin-right: 0.5rem;
+    }
+  }
 
   .btn {
     margin-top: 2rem;
-    margin-right: 0.5rem;
-    border-radius: 5px;
   }
   .more-btn {
     background-color: $black !important;
@@ -123,7 +144,7 @@ nav {
 
     @keyframes css {
       to {
-        width: 80%;
+        width: 70%;
       }
     }
 
@@ -143,10 +164,84 @@ nav {
 
     @keyframes python {
       to {
+        width: 50%;
+      }
+    }
+    &.reactjs:after {
+      animation-name: reactjs;
+    }
+
+    @keyframes reactjs {
+      to {
+        width: 40%;
+      }
+    }
+    &.mcss:after {
+      animation-name: mcss;
+    }
+
+    @keyframes mcss {
+      to {
+        width: 95%;
+      }
+    }
+    &.bootstrap:after {
+      animation-name: bootstrap;
+    }
+
+    @keyframes bootstrap {
+      to {
+        width: 70%;
+      }
+    }
+    &.teamplayer:after {
+      animation-name: teamplayer;
+    }
+
+    @keyframes teamplayer {
+      to {
+        width: 80%;
+      }
+    }
+    &.communication:after {
+      animation-name: communication;
+    }
+
+    @keyframes communication {
+      to {
+        width: 50%;
+      }
+    }
+    &.adaptability:after {
+      animation-name: adaptability;
+    }
+
+    @keyframes adaptability {
+      to {
         width: 60%;
       }
     }
+    &.workethic:after {
+      animation-name: workethic;
+    }
+
+    @keyframes workethic {
+      to {
+        width: 85%;
+      }
+    }
   }
+}
+#achievements {
+  img {
+    max-height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+.page-footer {
+  background-color: $black;
+  line-height: 2;
 }
 
 // TIMELINE
@@ -263,6 +358,11 @@ nav {
 @media only screen and (max-width: 600px) {
   .customContainer {
     margin: 0 1em;
+  }
+  .custom-btn {
+    text-align: center;
+    width: 12.3rem;
+    margin-right: 0.5rem;
   }
   .timeline {
     .timeline-event {

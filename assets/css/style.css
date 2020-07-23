@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -8,13 +9,22 @@ body {
   font-family: "Baloo Da 2", cursive;
 }
 
+nav .brand-logo {
+  margin-left: 1rem;
+  color: #04949c;
+  font-family: "Satisfy", cursive;
+}
+
 nav ul a {
   color: #040404;
+  font-size: 1.125em;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 nav ul a:hover {
+  font-weight: 600;
+  color: #040404;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -42,10 +52,17 @@ nav ul a:hover {
   background-color: #fff !important;
   color: #040404 !important;
   border: 1px solid #040404;
+  border-radius: 5px;
   font-size: 1.25rem;
   height: 3rem;
-  width: 12rem;
+  width: 13rem;
+  margin-right: 0.5rem;
   line-height: 2.5;
+}
+
+.custom-btn:hover {
+  background-color: #040404 !important;
+  color: #fff !important;
 }
 
 #home h1 {
@@ -57,10 +74,16 @@ nav ul a:hover {
   color: #fc8c06;
 }
 
+#home .social-btn {
+  margin-top: 1rem;
+}
+
+#home .social-btn .btn-floating {
+  margin-right: 0.5rem;
+}
+
 #home .btn {
   margin-top: 2rem;
-  margin-right: 0.5rem;
-  border-radius: 5px;
 }
 
 #home .more-btn {
@@ -132,13 +155,13 @@ nav ul a:hover {
 
 @-webkit-keyframes css {
   to {
-    width: 80%;
+    width: 70%;
   }
 }
 
 @keyframes css {
   to {
-    width: 80%;
+    width: 70%;
   }
 }
 
@@ -166,14 +189,144 @@ nav ul a:hover {
 
 @-webkit-keyframes python {
   to {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @keyframes python {
   to {
+    width: 50%;
+  }
+}
+
+#skill li.reactjs:after {
+  -webkit-animation-name: reactjs;
+          animation-name: reactjs;
+}
+
+@-webkit-keyframes reactjs {
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes reactjs {
+  to {
+    width: 40%;
+  }
+}
+
+#skill li.mcss:after {
+  -webkit-animation-name: mcss;
+          animation-name: mcss;
+}
+
+@-webkit-keyframes mcss {
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes mcss {
+  to {
+    width: 95%;
+  }
+}
+
+#skill li.bootstrap:after {
+  -webkit-animation-name: bootstrap;
+          animation-name: bootstrap;
+}
+
+@-webkit-keyframes bootstrap {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes bootstrap {
+  to {
+    width: 70%;
+  }
+}
+
+#skill li.teamplayer:after {
+  -webkit-animation-name: teamplayer;
+          animation-name: teamplayer;
+}
+
+@-webkit-keyframes teamplayer {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes teamplayer {
+  to {
+    width: 80%;
+  }
+}
+
+#skill li.communication:after {
+  -webkit-animation-name: communication;
+          animation-name: communication;
+}
+
+@-webkit-keyframes communication {
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes communication {
+  to {
+    width: 50%;
+  }
+}
+
+#skill li.adaptability:after {
+  -webkit-animation-name: adaptability;
+          animation-name: adaptability;
+}
+
+@-webkit-keyframes adaptability {
+  to {
     width: 60%;
   }
+}
+
+@keyframes adaptability {
+  to {
+    width: 60%;
+  }
+}
+
+#skill li.workethic:after {
+  -webkit-animation-name: workethic;
+          animation-name: workethic;
+}
+
+@-webkit-keyframes workethic {
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes workethic {
+  to {
+    width: 85%;
+  }
+}
+
+#achievements img {
+  max-height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.page-footer {
+  background-color: #040404;
+  line-height: 2;
 }
 
 .timeline {
@@ -264,6 +417,11 @@ nav ul a:hover {
 @media only screen and (max-width: 600px) {
   .customContainer {
     margin: 0 1em;
+  }
+  .custom-btn {
+    text-align: center;
+    width: 12.3rem;
+    margin-right: 0.5rem;
   }
   .timeline .timeline-event .timeline-content {
     width: calc(100% - 70px);
