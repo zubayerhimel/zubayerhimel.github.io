@@ -10,6 +10,13 @@ body {
 
 nav ul a {
   color: #040404;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .customContainer {
@@ -18,8 +25,27 @@ nav ul a {
   margin-right: 4rem;
 }
 
+.mt5 {
+  margin-top: 5rem;
+}
+
 #my-img {
   border-radius: 50%;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.custom-btn {
+  text-transform: none;
+  background-color: #fff !important;
+  color: #040404 !important;
+  border: 1px solid #040404;
+  font-size: 1.25rem;
+  height: 3rem;
+  width: 12rem;
+  line-height: 2.5;
 }
 
 #home h1 {
@@ -46,15 +72,108 @@ nav ul a {
   font-weight: 600;
 }
 
-.custom-btn {
-  text-transform: none;
-  background-color: #fff !important;
-  color: #040404 !important;
-  border: 1px solid #040404;
-  font-size: 1.25rem;
-  height: 3rem;
-  width: 12rem;
-  line-height: 2.5;
+#skill li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#skill li::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #94dcd4;
+  border-radius: 1000px;
+}
+
+#skill li::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 10px;
+  background-color: #04949c;
+  border-radius: 1000px;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#skill li.html::after {
+  -webkit-animation-name: html;
+          animation-name: html;
+}
+
+@-webkit-keyframes html {
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+  }
+}
+
+#skill li.css:after {
+  -webkit-animation-name: css;
+          animation-name: css;
+}
+
+@-webkit-keyframes css {
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  to {
+    width: 80%;
+  }
+}
+
+#skill li.javascript:after {
+  -webkit-animation-name: javascript;
+          animation-name: javascript;
+}
+
+@-webkit-keyframes javascript {
+  to {
+    width: 75%;
+  }
+}
+
+@keyframes javascript {
+  to {
+    width: 75%;
+  }
+}
+
+#skill li.python:after {
+  -webkit-animation-name: python;
+          animation-name: python;
+}
+
+@-webkit-keyframes python {
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes python {
+  to {
+    width: 60%;
+  }
 }
 
 .timeline {
