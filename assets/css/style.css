@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 body {
   font-family: "Baloo Da 2", cursive;
+}
+
+body p,
+body span {
+  font-family: "Open Sans", sans-serif;
 }
 
 nav .brand-logo {
@@ -31,8 +37,8 @@ nav ul a:hover {
   margin-right: 4rem;
 }
 
-.mt5 {
-  margin-top: 5rem;
+.mt8 {
+  margin-top: 8rem;
 }
 
 #my-img {
@@ -41,6 +47,20 @@ nav ul a:hover {
 
 .card {
   border-radius: 15px;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.grid .cell {
+  margin-left: 0;
 }
 
 .custom-btn {
@@ -67,7 +87,7 @@ nav ul a:hover {
 }
 
 #home h4 {
-  color: #FA7806;
+  color: #fa7806;
 }
 
 #home h6 a {
@@ -317,6 +337,33 @@ nav ul a:hover {
   to {
     width: 85%;
   }
+}
+
+#education h4 {
+  color: #0277bd;
+}
+
+#education h5 {
+  color: #040404;
+}
+
+#projects .card-title {
+  color: #04949c;
+  font-weight: 600;
+  font-family: "Baloo Da 2";
+}
+
+#projects .btn-small {
+  background-color: #040404 !important;
+  color: #fff !important;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+#projects .btn-flat {
+  color: #040404;
+  text-decoration: underline;
 }
 
 #achievements img {

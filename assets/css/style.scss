@@ -1,15 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 $teal: #04949c;
 $light-teal: #94dcd4;
 $black: #040404;
 $blue: #0277bd;
-$orange: #FA7806;
+$orange: #fa7806;
 
 body {
   font-family: "Baloo Da 2", cursive;
+  p,
+  span {
+    font-family: "Open Sans", sans-serif;
+  }
 }
 nav {
   .brand-logo {
@@ -37,8 +42,8 @@ nav {
   margin-top: 1rem;
   margin-right: 4rem;
 }
-.mt5 {
-  margin-top: 5rem;
+.mt8 {
+  margin-top: 8rem;
 }
 
 #my-img {
@@ -46,6 +51,15 @@ nav {
 }
 .card {
   border-radius: 15px;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  .cell {
+    margin-left: 0;
+  }
 }
 
 .custom-btn {
@@ -74,12 +88,12 @@ nav {
   h4 {
     color: $orange;
   }
-h6 {
-  a {
-    color: $black;
-    font-weight: 600;
+  h6 {
+    a {
+      color: $black;
+      font-weight: 600;
+    }
   }
-}
   .social-btn {
     margin-top: 1rem;
 
@@ -234,6 +248,32 @@ h6 {
         width: 85%;
       }
     }
+  }
+}
+#education {
+  h4 {
+    color: $blue;
+  }
+  h5 {
+    color: $black;
+  }
+}
+#projects {
+  .card-title {
+    color: $teal;
+    font-weight: 600;
+    font-family: "Baloo Da 2";
+  }
+  .btn-small {
+    background-color: $black !important;
+    color: #fff !important;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    text-decoration: none;
+  }
+  .btn-flat {
+    color: $black;
+    text-decoration: underline;
   }
 }
 #achievements {
