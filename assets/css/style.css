@@ -31,6 +31,14 @@ nav ul a:hover {
           transform: scale(1.1);
 }
 
+.progress {
+  margin: 0;
+}
+
+#main-content {
+  display: none;
+}
+
 .customContainer {
   margin-left: 4rem;
   margin-top: 1rem;
