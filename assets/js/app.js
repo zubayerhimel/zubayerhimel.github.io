@@ -19,7 +19,7 @@ $(function () {
   // skill bar color set
   $(window).on("load", function () {
     $(".progress").hide();
-    $("#main-content").fadeIn(100);
+    $("#main-content").fadeIn();
     $(".skill_row_percent_view").each(function () {
       thisVal = $(this).text();
       $(this).parent(".skill_row_percent").animate({ width: thisVal }, 200);
