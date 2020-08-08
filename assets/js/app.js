@@ -28,8 +28,7 @@ $(function () {
 
   // Contact form functionality
 
-  $("#contact-form").submit(function (e) {
-    e.preventDefault();
+  $("#submit-btn").click(function () {
     let url = "https://cuntato.herokuapp.com/api/project-data";
     let data = {
       name: $("#name").val(),
