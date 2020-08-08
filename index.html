@@ -577,46 +577,46 @@
                 <h5 class="amber-text text-darken-2">Mobile number</h5>
                 <span><b>+880 1955377998</b></span>
               </div>
-              <form action="" id="contact-form">
-                <div class="col s12 m6 l8">
-                  <div class="input-field col s6">
-                    <input
-                      placeholder="John"
-                      id="name"
-                      type="text"
-                      class="validate"
-                      required
-                    />
-                    <label class="active" for="name"> Name</label>
-                  </div>
-                  <div class="input-field col s6">
-                    <input
-                      placeholder="john@abc.com"
-                      id="email"
-                      type="email"
-                      class="validate"
-                      required
-                    />
-                    <label class="active" for="email">Email</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <textarea
-                      id="message"
-                      class="materialize-textarea"
-                      required
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                  <div class="col s12 right-align">
-                    <input
-                      type="submit"
-                      value="Submit"
-                      id="submit-btn"
-                      class="btn custom-btn"
-                    />
-                  </div>
+              <!-- <form action="" id="contact-form"> -->
+              <div class="col s12 m6 l8">
+                <div class="input-field col s6">
+                  <input
+                    placeholder="John"
+                    id="name"
+                    type="text"
+                    class="validate"
+                    required
+                  />
+                  <label class="active" for="name"> Name</label>
                 </div>
-              </form>
+                <div class="input-field col s6">
+                  <input
+                    placeholder="john@abc.com"
+                    id="email"
+                    type="email"
+                    class="validate"
+                    required
+                  />
+                  <label class="active" for="email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                  <textarea
+                    id="message"
+                    class="materialize-textarea"
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+                <div class="col s12 right-align">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    id="submit-btn"
+                    class="btn custom-btn"
+                  />
+                </div>
+              </div>
+              <!-- </form> -->
             </div>
           </div>
         </div>
@@ -646,5 +646,29 @@
     <script src="assets/js/jQuery.nav.js"></script>
     <!-- Custom js -->
     <script src="assets/js/app.js"></script>
+    <script>
+      $("#submit-btn").click(function () {
+        let url = "https://cuntato.herokuapp.com/api/project-data";
+        let data = {
+          name: $("#name").val(),
+          email: $("#email").val(),
+          message: $("#message").val(),
+        };
+        data = JSON.stringify(data);
+        let projectID = "p3y5ybl349";
+        let currentURL = window.location.href;
+        $.post(
+          url,
+          { data, projectID: projectID, currentURL: currentURL },
+          function () {}
+        )
+          .done((res) => {
+            console.log("Message sent successfully");
+          })
+          .fail(() => {
+            console.log("Something went wrong");
+          });
+      });
+    </script>
   </body>
 </html>
