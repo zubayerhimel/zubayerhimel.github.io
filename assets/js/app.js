@@ -27,6 +27,7 @@ $(function () {
   });
 
   // Contact form functionality
+
   $("#contact-form").submit(function (e) {
     e.preventDefault();
     let url = "https://cuntato.herokuapp.com/api/project-data";
@@ -35,16 +36,15 @@ $(function () {
       email: $("#email").val(),
       message: $("#message").val(),
     };
-
     data = JSON.stringify(data);
     let projectID = "ifabycxffa";
-    let currentUrl = window.location.href;
+    let currentURL = window.location.href;
     $.post(
       url,
-      { data, projectID: projectID, currentUrl: currentUrl },
+      { data, projectID: projectID, currentURL: currentURL },
       function () {}
     )
-      .done(() => {
+      .done((res) => {
         M.toast({ html: "Message sent 🤗" });
       })
       .fail(() => {
