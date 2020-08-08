@@ -28,27 +28,27 @@ $(function () {
 
   // Contact form functionality
 
-  // $("#contact-form").submit(function (e) {
-  //   e.preventDefault();
-  //   let url = "https://cuntato.herokuapp.com/api/project-data";
-  //   let data = {
-  //     name: $("#name").val(),
-  //     email: $("#email").val(),
-  //     message: $("#message").val(),
-  //   };
-  //   data = JSON.stringify(data);
-  //   let projectID = "p3y5ybl349";
-  //   let currentURL = window.location.href;
-  //   $.post(
-  //     url,
-  //     { data, projectID: projectID, currentURL: currentURL },
-  //     function () {}
-  //   )
-  //     .done(() => {
-  //       M.toast({ html: "Message sent 🤗" });
-  //     })
-  //     .fail(() => {
-  //       M.toast({ html: "Something went wrong 😟" });
-  //     });
-  // });
+  $("#contact-form").submit(function (e) {
+    e.preventDefault();
+    let url = "https://cuntato.herokuapp.com/api/project-data";
+    let data = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      message: $("#message").val(),
+    };
+    data = JSON.stringify(data);
+    let projectID = "p3y5ybl349";
+    let currentURL = window.location.href;
+    $.post(
+      url,
+      { data, projectID: projectID, currentURL: currentURL },
+      function () {}
+    )
+      .done(() => {
+        M.toast({ html: "Message sent 🤗" });
+      })
+      .fail(() => {
+        M.toast({ html: "Something went wrong 😟" });
+      });
+  });
 });

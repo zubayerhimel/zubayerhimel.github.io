@@ -646,29 +646,5 @@
     <script src="assets/js/jQuery.nav.js"></script>
     <!-- Custom js -->
     <script src="assets/js/app.js"></script>
-    <script>
-      $("#submit-btn").click(function () {
-        let url = "https://cuntato.herokuapp.com/api/project-data";
-        let data = {
-          name: $("#name").val(),
-          email: $("#email").val(),
-          message: $("#message").val(),
-        };
-        data = JSON.stringify(data);
-        let projectID = "p3y5ybl349";
-        let currentURL = window.location.href;
-        $.post(
-          url,
-          { data, projectID: projectID, currentURL: currentURL },
-          function () {}
-        )
-          .done((res) => {
-            console.log("Message sent successfully");
-          })
-          .fail(() => {
-            console.log("Something went wrong");
-          });
-      });
-    </script>
   </body>
 </html>
