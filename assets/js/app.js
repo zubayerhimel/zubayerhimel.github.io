@@ -28,7 +28,7 @@ $(function () {
 
   // Contact form functionality
 
-  $("#submit-btn").click(function () {
+  $("#contact-form").submit(function () {
     let url = "https://cuntato.herokuapp.com/api/project-data";
     let data = {
       name: $("#name").val(),
@@ -43,7 +43,7 @@ $(function () {
       { data, projectID: projectID, currentURL: currentURL },
       function () {}
     )
-      .done((res) => {
+      .done(() => {
         M.toast({ html: "Message sent 🤗" });
       })
       .fail(() => {
