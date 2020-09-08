@@ -30,6 +30,7 @@ $(function () {
 
   $("#contact-form").submit(function (e) {
     e.preventDefault();
+    $("#submit-btn").prop("value", "Submitting...");
     let url = "https://cuntato.herokuapp.com/api/project-data";
     let data = {
       name: $("#name").val(),
@@ -39,12 +40,9 @@ $(function () {
     data = JSON.stringify(data);
     let projectID = "p3y5ybl349";
     let currentURL = window.location.href;
-    $.post(
-      url,
-      { data, projectID: projectID, currentURL: currentURL },
-      function () {}
-    )
+    $.post(url, { data, projectID: projectID, currentURL: currentURL }, function () {})
       .done(() => {
+        $("#submit-btn").prop("value", "Submit");
         M.toast({ html: "Message sent 🤗" });
       })
       .fail(() => {
