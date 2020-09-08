@@ -111,6 +111,10 @@ nav ul a:hover {
   margin-right: 0.5rem;
 }
 
+#home .social-btn .btn-floating img {
+  margin-top: 4px;
+}
+
 #home .btn {
   margin-top: 2rem;
 }

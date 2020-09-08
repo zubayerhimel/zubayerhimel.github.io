@@ -1,5 +1,6 @@
 $(function () {
   $(".sidenav").sidenav();
+  $(".tooltipped").tooltip();
 
   // on scroll navbar li change
   $("#nav").onePageNav({
