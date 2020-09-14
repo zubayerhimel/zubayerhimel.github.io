@@ -44,6 +44,9 @@ $(function () {
     $.post(url, { data, projectID: projectID, currentURL: currentURL }, function () {})
       .done(() => {
         $("#submit-btn").prop("value", "Submit");
+        $("#name").val("");
+        $("#email").val("");
+        $("#message").val("");
         M.toast({ html: "Message sent 🤗" });
       })
       .fail(() => {
