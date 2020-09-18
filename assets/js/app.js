@@ -32,6 +32,7 @@ $(function () {
   $("#contact-form").submit(function (e) {
     e.preventDefault();
     $("#submit-btn").prop("value", "Submitting...");
+    $("#submit-btn").attr("disabled", true);
     let url = "https://cuntato.herokuapp.com/api/project-data";
     let data = {
       name: $("#name").val(),
@@ -43,6 +44,7 @@ $(function () {
     let currentURL = window.location.href;
     $.post(url, { data, projectID: projectID, currentURL: currentURL }, function () {})
       .done(() => {
+        $("#submit-btn").attr("disabled", false);
         $("#submit-btn").prop("value", "Submit");
         $("#name").val("");
         $("#email").val("");
