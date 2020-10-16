@@ -1,0 +1,32 @@
+{
+    "name": "Zubayer",
+    "short_name": "Zubayer",
+    "lang": "en-US",
+    "start_url": "index.html",
+    "display": "standalone",
+    "theme_color": "#04949c",
+    "background_color": "#FFFFFF",
+    "icons": [
+        {
+          "src": "assets/img/logo/logo128.png",
+          "sizes": "128x128"
+        },
+        {
+          "src": "assets/img/logo/logo192.png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "assets/img/logo/logo256.png",
+          "sizes": "256x256"
+        },
+        {
+          "src": "assets/img/logo/logo384.png",
+          "sizes": "384x384"
+        },
+        {
+          "src": "assets/img/logo/logo512.png",
+          "sizes": "512x512",
+          "purpose": "any maskable"
+        }
+      ]
+}
