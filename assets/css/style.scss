@@ -432,9 +432,14 @@ nav {
   .customContainer {
     margin: 0 1em;
   }
+  .home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .custom-btn {
     text-align: center;
-    width: 12.3rem;
+    width: 12rem;
     margin-right: 0.5rem;
   }
   .timeline {

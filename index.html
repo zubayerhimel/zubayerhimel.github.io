@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css" />
     <!-- Custom css -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css" /> -->
   </head>
   <body>
     <header>
@@ -106,9 +108,9 @@
               </h4>
 
               <span class="flow-text">
-                Hello! I’m Zubayer, a self taught 22 years old undergrad Software Engineering student from Bangladesh. I
-                am a front-end developer, problem solver and love to work with modern technology. I also have interest
-                in data science and machine learning.
+                Hello! I’m Zubayer, a self taught undergrad Software Engineering student from Bangladesh. I am a
+                front-end developer, problem solver and love to work with modern technology. I also have interest in
+                data science and machine learning.
               </span>
               <div class="row">
                 <div class="col s12 m12 l6">
@@ -157,7 +159,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col s12">
+                <div class="col s12 home-btn">
                   <a href="#education" class="waves-effect waves-light btn custom-btn more-btn">Learn more</a>
                   <a
                     href="assets/download/resume.pdf"
@@ -336,7 +338,41 @@
                   </div>
                 </div>
               </div>
+              <div class="col s12 m6 l4 cell">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">TeamTigers.tech</span>
+                    <p>
+                      Designed the official site of TeamTigers using MaterializeCSS and SCSS. The site has PWA
+                      implemented in it.
+                    </p>
 
+                    <br />
+                    <a href="https://teamtigers.tech" target="_blank" class="btn btn-small">Demo</a>
+                    <a
+                      href="https://github.com/teamtigers/teamtigers.github.io"
+                      target="_blank"
+                      class="btn-flat waves-effect"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l4 cell">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">ChatRoom</span>
+                    <p>Developed a chat application using ReactJs and Firebase authentication.</p>
+
+                    <br />
+                    <a href="https://tigerschat.herokuapp.com/" target="_blank" class="btn btn-small">Demo</a>
+                    <a href="https://github.com/zubayerhimel/ChatRoom" target="_blank" class="btn-flat waves-effect"
+                      >Github</a
+                    >
+                  </div>
+                </div>
+              </div>
               <div class="col s12 m6 l4 cell">
                 <div class="card">
                   <div class="card-content">
@@ -446,7 +482,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col s12 m4 l4">
+              <div class="col s12 m6 l4">
                 <div class="card">
                   <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="assets/img/hacktoberfest.jpg" alt="hacktoberfest" />
@@ -455,7 +491,7 @@
                     <span class="card-title activator grey-text text-darken-4"
                       >Hacktoberfest <i class="material-icons right">more_vert</i></span
                     >
-                    <p>Won Hactoberfest by DigitalOcean</p>
+                    <p>Won Hactoberfest by completing more than 4 valid PR.</p>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4"
@@ -480,9 +516,9 @@
             <div class="row">
               <div class="col s12 m6 l4 center">
                 <h5 class="amber-text text-darken-2">Email</h5>
-                <span><b>zhimel007@gmail.com</b></span>
+                <p class="flow-text">zhimel007@gmail.com</p>
                 <h5 class="amber-text text-darken-2">Mobile number</h5>
-                <span><b>+880 1955377998</b></span>
+                <p class="flow-text">+880 1955377998</p>
               </div>
               <form action="" id="contact-form">
                 <div class="col s12 m6 l8">
@@ -530,5 +566,19 @@
     <script src="assets/js/jQuery.nav.js"></script>
     <!-- Custom js -->
     <script src="assets/js/app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("service-worker.js")
+            .then((reg) => {
+              console.log("Service successfully registered", reg);
+            })
+            .catch((err) => {
+              console.log("Service worker failed", err);
+            });
+        });
+      }
+    </script>
   </body>
 </html>
